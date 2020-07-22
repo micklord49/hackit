@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('fruits', 'ApiController@getAllFruits');
+Route::get('addresses/{postcode}', 'ApiController@GetAddresses');

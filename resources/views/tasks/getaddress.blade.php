@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <style>
-            html, body, a {
+            html, body a {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -48,6 +48,10 @@
                 font-size: 84px;
             }
 
+            .subtitle {
+                font-size: 48px;
+            }
+
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -81,11 +85,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    HackIT
+                    <a href="/">HackIT</a>
+                </div>
+                <div class="subtitle m-b-md">
+                    Get Addresses
                 </div>
 
                 <div class="links">
-                    <a href="/task/task1">Fruit</a>
+                <form id="form1" action="/task/GetForPostCode" method="post">
+                @csrf
+
+                    <input name="postcode" id="postcode">                    
+                    <input type="submit" value="Submit">
+                </form>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <style>
-            html, body {
+            html, body a {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -85,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    HackIT
+                    <a href="/">HackIT</a>
                 </div>
                 <div class="subtitle m-b-md">
                     Task1

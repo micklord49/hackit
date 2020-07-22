@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('/task/task1', 'TaskController@Task1');
-
+Route::get('/task/GetAddress', 'TaskController@GetAddress');
+Route::post('/task/GetForPostCode', 'TaskController@GetForPostCode');
 
 
